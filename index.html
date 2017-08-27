@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="The DLSU LPEP Green Guide is a website and a mobile application to aid the freshmen in their LPEP. The Green Guide shows the LPEP schedule and materials as well as need-to-knows around DLSU.">
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+    <title>Green Guide 2016</title>
+
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/img/icon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/img/icon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/icon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/icon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/icon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/icon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/img/icon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/icon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="assets/img/icon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/icon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/icon/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+  	<!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/font-awesome-4.6.3/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen"> -->
+ 
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/Chart.js"></script>
+	<script src="assets/js/custom.js"></script>
+  </head>
+
+	<body>
+ 		
+ 		<!-- NAVBAR -->
+		<nav class="navbar navbar-default navbar-custom">
+		  <div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+	      	</button>
+	       	<a class="navbar-brand pull-left" href="index.html"><img class="img-responsive header-img" src="assets/img/white-header-logo.png"></a>    
+		  </div>
+		  <div class="collapse navbar-collapse">
+		    <ul class="nav navbar-nav">
+		    	<li class="dropdown">
+		        	<a href="#" class="white-text nav-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LPEP <span class="caret"></span></a>
+		        	<ul class="dropdown-menu">
+						<li><a href="lpep-sched.html" class="nav-menu-item">Schedule</a></li>
+						<li><a href="dean-message.html" class="nav-menu-item">Dean's Message</a></li>
+						<li><a href="pledge.html" class="nav-menu-item">Lasallian Pledge</a></li>
+                	</ul>
+		        </li>
+		        <li class="dropdown">
+		        	<a href="#" class="white-text nav-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Values & Prayers <span class="caret"></span></a>
+		        	<ul class="dropdown-menu">
+						<li><a href="values.html" class="nav-menu-item">Core Values</a></li>
+						<li><a href="prayers.html" class="nav-menu-item">Prayers</a></li>
+                	</ul>
+		        </li>
+		        <li class="dropdown">
+		        	<a href="#" class="white-text nav-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Offices <span class="caret"></span></a>
+		        	<ul class="dropdown-menu">
+						<li><a href="admin-offices.html" class="nav-menu-item">Administrative Offices</a></li>
+						<li><a href="student-affairs-offices.html" class="nav-menu-item">Lasallian Mission Offices</a></li>
+                	</ul>
+		        </li>
+		        <li class="dropdown">
+		        	<a href="#" class="white-text nav-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Student Organizations <span class="caret"></span></a>
+		        	<ul class="dropdown-menu">
+						<li><a href="cso.html" class="nav-menu-item">CSO</a></li>
+						<li><a href="cso-organizations.html" class="nav-menu-item">CSO Organizations</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="usg.html" class="nav-menu-item">USG</a></li>
+						<li><a href="usg-projects.html" class="nav-menu-item">USG Projects</a></li>
+                	</ul>
+		        </li>
+		        <li class="dropdown">
+		        	<a href="#" class="white-text nav-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FYI <span class="caret"></span></a>
+		        	<ul class="dropdown-menu">
+		        		<li><a href="hymns.html" class="nav-menu-item">Hymns</a></li>
+		        		<li><a href="cheers.html" class="nav-menu-item">DLSU Cheers</a></li>
+		        		<li role="separator" class="divider"></li>
+		        		<li><a href="parking.html" class="nav-menu-item">Parking</a></li>
+						<li><a href="arrows-express.html" class="nav-menu-item">Arrows Express</a></li>
+						<li><a href="places-to-eat.html" class="nav-menu-item">Places to Eat</a></li>
+						<li><a href="hotspot.html" class="nav-menu-item">WiFi Hotspot</a></li>
+						<li><a href="housing.html" class="nav-menu-item">Housing Facilities</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="printing.html" class="nav-menu-item">Printing</a></li>
+						<li><a href="photocopying.html" class="nav-menu-item">Photocopying</a></li>
+						<li><a href="supplies.html" class="nav-menu-item">School Supplies</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="academic-calendar.html" class="nav-menu-item">Academic Calendar</a></li>
+                		<li><a href="policies.html" class="nav-menu-item">Policies</a></li>
+						<li><a href="liturgical-activities.html" class="nav-menu-item">Liturgical Activities</a></li>
+                	</ul>
+		        </li>
+		        <li><a href="about.html" class="white-text nav-item">About</a></li>
+		    </ul>
+		  </div>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- ========== HEADER SECTION ========== -->
+		<section id="header-2">
+			<div class = "header-2-overlay">
+			<div class = "container-fluid header-2-container">
+				<div class = "row">
+					<div class = "col-lg-offset-1 col-lg-10 col-md-8 col-sm-10 col-xs-12">
+						<div class = "text-header text-head white-text semi-bold letter-space text-left no-lh">
+							De La Salle University<br>LPEP Green Guide
+						</div>
+					</div>
+				</div>
+				<div class = "row">
+					<div class = "col-lg-offset-1 col-lg-8 col-md-8 col-sm-10 col-xs-12">
+						<div class="white-text light letter-space text-left"><b>".....In our tradition of teaching minds, touching hearts, and transforming lives, allow us to accompany you in your journey as college students through the Lasallian Personal Effectiveness Program (LPEP)....."</div>
+					</div>
+				</div>
+				<p></p>
+				<div class = "row">
+					<div class = "col-lg-offset-1 col-lg-8 col-md-8 col-sm-10 col-xs-12">
+						<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 no-padding-left">
+							<img src="assets/img/smdeanstudent.jpg" class="img-responsive img-circle h">
+						</div>
+						<div class = "col-lg-10 col-md-8 col-sm-9 col-xs-8 header-2-text-margin">
+							<div class = "row">
+								<div class="white-text regular letter-space text-left"><b>Ms. Amelia M. Galang</b></div>
+							</div>
+							<div class = "row">
+								<div class="white-text light letter-space text-left">Dean of Student Affairs</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class = "row">
+					<br>
+					<div class = "col-lg-1 col-lg-offset-1 col-sm-2 ol-sm-offset-0 col-xs-2 col-xs-offset-0">
+						<form method="get" action="dean-message.html">
+							<button class="btn btn-para-custom marine-green-bg white-text" type = "submit">READ MORE</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section> 
+		<!-- ========== HEADER SECTION END ========== -->
+
+		<!-- ========== FOOTER SECTION ========== -->
+		<section id="footer-2">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-7 col-lg-offset-1 col-sm-12 col-xs-12">
+						<div class="row">
+							<p class="white-text light letter-space-half bottom-list">Download the app at <br class="visible-xs"><a class="footer-link" href="https://play.google.com/store/apps/details?id=com.greenguide.dlsu.greenguide" target="_blank"	>Google Play Store</a> | <a class="footer-link" href="https://itunes.apple.com/ph/app/dlsu-lpep-green-guide/id1149956443?mt=8" target="_blank">Apple Store</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ========== FOOTER SECTION END ========== -->
+
+  	</body>
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/js/bootstrap.min.js"></script>
+  	<script src="assets/js/main.js"></script>
+
+</html>

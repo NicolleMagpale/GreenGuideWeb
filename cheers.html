@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="The DLSU LPEP Green Guide is a website and a mobile application to aid the freshmen in their LPEP. The Green Guide shows the LPEP schedule and materials as well as need-to-knows around DLSU.">
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+    <title>Green Guide 2016</title>
+
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/img/icon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/img/icon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/icon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/icon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/icon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/icon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/img/icon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/icon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="assets/img/icon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/icon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/icon/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+  	<!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/font-awesome-4.6.3/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen"> -->
+ 
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/Chart.js"></script>
+	<script src="assets/js/custom.js"></script>
+  </head>
+ 
+  <body>
+ 		
+ 		<!-- NAVBAR -->
+		<nav class="navbar navbar-default navbar-custom">
+		  <div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+	      	</button>
+	       	<a class="navbar-brand pull-left" href="index.html"><img class="img-responsive header-img" src="assets/img/white-header-logo.png"></a>    
+		  </div>
+		  <div class="collapse navbar-collapse">
+		    <ul class="nav navbar-nav">
+		    	<li class="dropdown">
+		        	<a href="#" class="white-text nav-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LPEP <span class="caret"></span></a>
+		        	<ul class="dropdown-menu">
+						<li><a href="lpep-sched.html" class="nav-menu-item">Schedule</a></li>
+						<li><a href="dean-message.html" class="nav-menu-item">Dean's Message</a></li>
+						<li><a href="pledge.html" class="nav-menu-item">Lasallian Pledge</a></li>
+                	</ul>
+		        </li>
+		        <li class="dropdown">
+		        	<a href="#" class="white-text nav-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Values & Prayers <span class="caret"></span></a>
+		        	<ul class="dropdown-menu">
+						<li><a href="values.html" class="nav-menu-item">Core Values</a></li>
+						<li><a href="prayers.html" class="nav-menu-item">Prayers</a></li>
+                	</ul>
+		        </li>
+		        <li class="dropdown">
+		        	<a href="#" class="white-text nav-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Offices <span class="caret"></span></a>
+		        	<ul class="dropdown-menu">
+						<li><a href="admin-offices.html" class="nav-menu-item">Administrative Offices</a></li>
+						<li><a href="student-affairs-offices.html" class="nav-menu-item">Lasallian Mission Offices</a></li>
+                	</ul>
+		        </li>
+		        <li class="dropdown">
+		        	<a href="#" class="white-text nav-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Student Organizations <span class="caret"></span></a>
+		        	<ul class="dropdown-menu">
+						<li><a href="cso.html" class="nav-menu-item">CSO</a></li>
+						<li><a href="cso-organizations.html" class="nav-menu-item">CSO Organizations</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="usg.html" class="nav-menu-item">USG</a></li>
+						<li><a href="usg-projects.html" class="nav-menu-item">USG Projects</a></li>
+                	</ul>
+		        </li>
+		        <li class="dropdown">
+		        	<a href="#" class="white-text nav-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FYI <span class="caret"></span></a>
+		        	<ul class="dropdown-menu">
+		        		<li><a href="hymns.html" class="nav-menu-item">Hymns</a></li>
+		        		<li><a href="cheers.html" class="nav-menu-item">DLSU Cheers</a></li>
+		        		<li role="separator" class="divider"></li>
+		        		<li><a href="parking.html" class="nav-menu-item">Parking</a></li>
+						<li><a href="arrows-express.html" class="nav-menu-item">Arrows Express</a></li>
+						<li><a href="places-to-eat.html" class="nav-menu-item">Places to Eat</a></li>
+						<li><a href="hotspot.html" class="nav-menu-item">WiFi Hotspot</a></li>
+						<li><a href="housing.html" class="nav-menu-item">Housing Facilities</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="printing.html" class="nav-menu-item">Printing</a></li>
+						<li><a href="photocopying.html" class="nav-menu-item">Photocopying</a></li>
+						<li><a href="supplies.html" class="nav-menu-item">School Supplies</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="academic-calendar.html" class="nav-menu-item">Academic Calendar</a></li>
+                		<li><a href="policies.html" class="nav-menu-item">Policies</a></li>
+						<li><a href="liturgical-activities.html" class="nav-menu-item">Liturgical Activities</a></li>
+                	</ul>
+		        </li>
+		        <li><a href="about.html" class="white-text nav-item">About</a></li>
+		    </ul>
+		  </div>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- ========== HEADER SECTION ========== -->
+
+		<section id="header" class = "cheers-header">
+			<div class = "container-fluid  bottom-align">
+				<div class = "row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class = "text-header white-text semi-bold letter-space">
+						DLSU Cheers
+					</div>
+				</div>
+				<div class = "row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="white-text regular letter-space tip-header" id="randomTip"><b>TIP #10</b>: You don't always have to buy a new book, you can borrow from the Library or avail the Pahiram libro service of the USG.</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========== HEADER SECTION END ========== -->
+
+		<!-- ========== WHITE SECTION ========== -->
+
+		<section id="white">
+			<div class="container-fluid">
+				
+				<div class="row">
+				</div>
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<center><h4 class="green-forest-text regular">In true Lasallian spirit, wear our colors proud and cheer at the top of your lungs to support our teams during games and competitions!</h4></center>
+					</div>
+				</div>
+				<br>
+				<div class="row margin-25-wrapper" id="Rektikano">
+					<div class = "col-lg-4 col-lg-offset-2 col-sm-4 col-sm-offset-2 col-xs-12">
+						<div class = "embed-responsive embed-responsive-16by9">
+							<iframe width="300" height="300" src="http://www.youtube.com/embed/SdOjLEJKamA" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-4 col-xs-12">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">Rektikano</h1>
+						<p class="text-center">
+						Rektikano, set! 1 2 3<br>  Rektikano! (Rektikano!) <br>Ready! (Ready!) 1 2 3<br /><br />
+						Rektikano, keena keena<br />
+						Rektikano, keena keena<br />
+						Rektikano, rektikano, rektikano, rah! x 2<br /><br />
+
+						Sis-boom-bah!<br />
+						Sis-boom-bah!<br /><br />
+
+						Boom-rah-boom-rah-boom-rah-rah!<br />
+						Boom-rah-boom-rah-boom-rah-rah!<br /><br />
+
+						Sis-boom-bah!<br />
+						Sis-boom-bah!<br /><br />
+
+						La Salle!</p>
+					</div>
+				</div>
+
+				<div class="row margin-25-wrapper" id="LASALLESPELL">
+					<div class = "col-xs-12 visible-xs">
+						<div class = "embed-responsive embed-responsive-16by9">
+							<iframe width="300" height="300" src="https://www.youtube.com/embed/UkxwimD4OFU" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 col-xs-12 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">La Salle Spelling</h1>
+						<p class="text-center">
+						La Salle spelling three times Set!<br> 1 2 3 La Salle spelling three times! set! (La Salle spelling three times!) <br />
+						Ready! (Ready!) 1 2 3 (Uno, dos, tres!) <br />
+						L – A – S – A – L-L – E<br />
+						La Salle, rah!<br />
+						L – A – S – A – L-L – E<br />
+						La Salle, rah!<br />
+						L – A – S – A – L-L – E<br />
+						La Salle, rah!</p>
+					</div>
+					<div class = "col-lg-4 col-sm-4 hidden-xs">
+						<div class = "embed-responsive embed-responsive-16by9">
+							<iframe width="300" height="300" src="https://www.youtube.com/embed/UkxwimD4OFU" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="row margin-25-wrapper" id="bumakaya">	
+					<div class = "col-lg-4 col-lg-offset-2 col-sm-4 col-sm-offset-2 col-xs-12">
+						<div class = "embed-responsive embed-responsive-16by9">
+							<iframe width="300" height="300" src="https://www.youtube.com/embed/vvrdAlMKyvc" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">Bumakaya</h1>
+						<p class="text-center">Bumakaya, set!<br> 1 2 3 Bumakaya! (Bumakaya!)<br> Ready! (Ready!) 1 2 3 <br />
+						Bu-ma-kaya <br />
+						I-ma-kadiwa <br />
+						Bu-ma-kaya <br />
+						I-ma-kadiwa <br />
+						Bumakaya, imakadiwa <br />
+						Bumakaya, imakadiwa <br />
+						Bumakaya, imakadiwa <br />
+						Fight! Team! Fight!</p>
+					</div>
+					
+				</div>
+
+
+				<div class="row margin-25-wrapper" id="zamazipazam">
+					<div class = "col-xs-12 visible-xs">
+						<div class = "embed-responsive embed-responsive-16by9">
+							<iframe width="300" height="300" src="https://www.youtube.com/embed/fMtCfHJuIfk" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 col-xs-12 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">Zama Zipa Zam</h1>
+						<p class="text-center">	
+						Zama Zipa Zam, set!<br> 1 2 3 Zama Zipa Zam! (Zama Zipa Zam!)<br> Ready! (Ready!) 1 2 3
+						Zama Zipa Zam! <br />
+						(Clap: 1, 2, 1-2-3, 1,2, 1-2-3) <br />
+						Fight! <br />
+						(Clap: 1, 2, 1-2-3, 1,2, 1-2-3) <br />
+						Fight! <br />
+						(Clap: 1, 2, 1-2-3, 1,2, 1-2-3) <br />
+						Fight! <br />
+						Win! Team! Win!</p>
+					</div>
+					<div class = "col-lg-4 col-sm-4 hidden-xs">
+						<div class = "embed-responsive embed-responsive-16by9">
+							<iframe width="300" height="300" src="https://www.youtube.com/embed/fMtCfHJuIfk" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row margin-25-wrapper" id="wtwtg">
+					<div class = "col-lg-4 col-lg-offset-2 col-sm-4 col-sm-offset-2 col-xs-12">
+						<div class = "embed-responsive embed-responsive-16by9">
+							<iframe width="300" height="300" src="https://www.youtube.com/embed/mE81UhkWMg4" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">Who's To Win This Game</h1>
+						<p class="text-center">Who’s to win this game, set! 1 2 3 <br />
+							Who’s to win this game? (Green!) <br />
+							Who’s to win this game? (White!) <br />
+							Green! (Green!) <br />
+							White! (White!) <br />
+							Green, white, fight! <br />
+							Green, white, white, white! <br />
+							Go, fight, fight, fight, fight! <br />
+							Green, white, go, fight! <br />
+							Green, white, fight! <br />
+							Green, white, white, white! <br />
+							Go, fight, fight, fight, fight! <br />
+							De La Salle! De La Salle! <br />
+							Fight! Team! Fight!</p>
+					</div>
+				</div>
+
+				<div class="row margin-25-wrapper" id="zamazipazam">
+					<div class = "col-xs-12 visible-xs">
+						<div class = "embed-responsive embed-responsive-16by9">
+							<iframe width="300" height="300" src="https://www.youtube.com/embed/mFJA_a1icXI" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6 col-xs-12 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">DLSU Victory Song</h1>
+						<p class="text-center">
+							Cheer, cheer, for old De La Salle<br>
+							Wake up the echoes cheering her name<br>
+							Send her rousing cheers on high<br>
+							Shake out the thunder from the sky<br><br>
+							 
+							What though the odds be great or small<br>
+							Old De La Salle will win over all<br>
+							White her loyal sons are marching<br>
+							Onward to victory, rah-rah-rah!
+						</p>
+					</div>
+					<div class = "col-lg-4 col-sm-4 hidden-xs">
+						<div class = "embed-responsive embed-responsive-16by9">
+							<iframe width="300" height="300" src="https://www.youtube.com/embed/mFJA_a1icXI" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+
+				<div class="row margin-25-wrapper" id="wtwtg">
+					<div class="col-lg-8 col-sm-10 col-xs-12 col-sm-offset-1 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">De La Salle Song</h1>
+						<p class="text-center">
+							Come whatever kind of weather <br>
+							When the old gangs get together <br>
+							That’s the time to think of days gone by <br><br>
+							 
+							Chase your blues and cares away<br>
+							Let’s be happy, let’s be gay<br>
+							In our hearts, the song will never die<br><br>
+							 
+							Chorus:<br>
+							De La Salle, we’re rooting for you!<br>
+							De La Salle, O, can’t you see<br>
+							Every one of us is you<br>
+							We’ll cheer you on to victory<br>
+							Rah! Rah!<br><br>
+							 
+							To the green and to the white<br>
+							We will pledge our loyalty<br>
+							And may years add but fame<br>
+							To that grand old name<br>
+							De La Salle, De La Salle (twice)
+						</p>
+					</div>
+				</div>
+
+				<div class="row margin-25-wrapper" id="wtwtg">
+					<div class="col-lg-8 col-sm-10 col-xs-12 col-sm-offset-1 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">Green Archers Song</h1>
+						<p class="text-center">
+							(Bugle blast) Rah! Rah! Rah<br>
+							(Bugle blast) Rah! Rah! Rah<br><br>
+							 
+							On into the fight, Green Archers<br>
+							(WHITE!)<br>
+							Fight to victory (GREEN! WHITE! FIGHT!)<br>
+							For La Salle, you valiant marchers (Rah!)<br>
+							Every fighters be (Rah! Rah! Rah!)<br>
+							Glory for La Salle Green Archers (Fight!)<br>
+							Our motto ever be (Green! White! Fight!)<br>
+							Let your arrows fly true, Archers<br>
+							‘Till we down the enemy (FIGHT! FIGHT! FIGHT!)
+						</p>
+					</div>
+				</div>
+
+				<div class="row margin-25-wrapper" id="wtwtg">
+					<div class="col-lg-8 col-sm-10 col-xs-12 col-sm-offset-1 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">Haydee Three Times</h1>
+						<p class="text-center">
+							Haydee three times, set! 1 2 3<br>
+							Haydee three times!<br>
+							(Haydee three times!)<br>
+							Ready! (Ready!)<br>
+							1 2 3<br><br>
+							 
+							Haydee-kaydee! Kala-wala-waydee!<br>
+							Kala-wala-wingo-dingo-daydee!<br>
+							Hush! Kush! Kala-wala-wush-wush!<br>
+							Kala-wala-wingo-dingo-dash!<br>
+							Haydee-kaydee! Kala-wala-waydee!<br>
+							Kala-wala-wingo-dingo-daydee!<br>
+							Hush! Kush! Kala-wala-wush-wush!<br>
+							Kala-wala-wingo-dingo-dash!<br>
+							Haydee-kaydee! Kala-wala-waydee!<br>
+							Kala-wala-wingo-dingo-daydee!<br>
+							Hush! Kush! Kala-wala-wush-wush!<br>
+							Kala-wala-wingo-dingo-dash!<br>
+							1 2 3!<br>
+							Animo!<br>
+							La Salle!
+						</p>
+					</div>
+				</div>
+
+
+				<div class="row margin-25-wrapper" id="wtwtg">
+					<div class="col-lg-8 col-sm-10 col-xs-12 col-sm-offset-1 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">Strawberry Shortcake</h1>
+						<p class="text-center">
+							Strawberry shortcake, set! 1 2 3<br>
+							Strawberry shortcake!<br>
+							(Strawberry shortcake!)<br>
+							Ready! (Ready!)<br>
+							1 2 3<br><br>
+							 
+							Strawberry shortcake, blueberry pie<br>
+							V-I-C-T-O-R-Y!<br>
+							Victory, victory, is our cry!<br>
+							De La Salle! De La Salle!<br><br>
+							 
+							Heidi-hei!
+						</p>
+					</div>
+				</div>
+
+				<div class="row margin-25-wrapper" id="wtwtg">
+					<div class="col-lg-8 col-sm-10 col-xs-12 col-sm-offset-1 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">Derecho La Salle</h1>
+						<p class="text-center">
+							1-2, 1-2, 3-4<br>
+							1-2, 1-2, 3-4<br>
+							1-2, 1-2, 3-4<br>
+							1-2, 1-2, 3-4<br>
+							D 1-2, 1-2, 3-4) CLAP<br>
+							L 1-2, 1-2, 3-4<br>
+							S 1-2, 1-2, 3-4<br>
+							U 1-2, 1-2, 3-4 D-L-S-U!<br>
+							DLSU, DERECHO LA SALLE!!!
+						</p>
+					</div>
+				</div>
+
+				<div class="row margin-25-wrapper" id="wtwtg">
+					<div class="col-lg-8 col-sm-10 col-xs-12 col-sm-offset-1 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">Yamakadep</h1>
+						<p class="text-center">
+							Yamakadep, set! 1 2 3<br>
+							Yamakadep! (Yamakadep!)<br>
+							Ready! (Ready!)<br>
+							1 2 3<br><br>
+							 
+							Yamakadep, D!<br>
+							Yamakadep, L!<br>
+							Yamakadep, S!<br>
+							Yamakadep, D-L-S!<br>
+							Rei, green!<br>
+							Rei, white!<br><br>
+							 
+							Rei, green! Rei, white!<br><br>
+							 
+							Rei, rei, rei-rei-rei!<br>
+							Rei, rei, rei-rei-rei!<br><br>
+							 
+							La Salle!<br><br>
+							 
+							Fight! Team! Fight!
+						</p>
+					</div>
+				</div>
+
+				<div class="row margin-25-wrapper" id="wtwtg">
+					<div class="col-lg-8 col-sm-10 col-xs-12 col-sm-offset-1 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">La Salle Fans</h1>
+						<p class="text-center">
+							La Salle fans, set! 1 2 3<br>
+							La Salle fans! (La Salle fans!)<br>
+							Ready! (Ready!)<br>
+							1 2 3<br><br>
+							 
+							La Salle fans in the stands, if you hear us,<br>
+							Clap your hands!<br>
+							(Clap: 1, 2, 3-4, 1, 2, 3-4, 1)<br>
+							Now that you’re with the beat, it’s time to<br>
+							Move your feet!<br>
+							(Stomp: 1, 2, 3-4, 1, 2, 3-4, 1)<br>
+							Now that you’re in the groove, it’s time to<br>
+							See your move!<br>
+							(Clap and stomp: 1, 2, 3-4, 1, 2, 3-4, 1)
+						</p>
+					</div>
+				</div>
+
+				<div class="row margin-25-wrapper" id="wtwtg">
+					<div class="col-lg-8 col-sm-10 col-xs-12 col-sm-offset-1 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">Anchors Aweigh</h1>
+						<p class="text-center">
+							Anchors aweigh my boys<br><br>
+							 
+							Anchors aweigh<br>
+							Farewell to La Salle joys<br>
+							We sail at break of day day day<br>
+							Through our last night on shore<br>
+							Onward we roam<br>
+							Until we meet once more<br>
+							Here’s wishing you a happy voyage home<br>
+							Sail La Salle down the floor<br>
+							Sail to the sky<br>
+							We’ll never change our course<br>
+							So, rival, you steers shy- shy- shy- shy<br>
+							Roll up the score, La Salle<br>
+							Anchors aweigh<br>
+							Sail La Salle down the floor<br>
+							And sink the rival, sink the rival, hey!
+						</p>
+					</div>
+				</div>
+
+				<div class="row margin-25-wrapper" id="wtwtg">
+					<div class="col-lg-8 col-sm-10 col-xs-12 col-sm-offset-1 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">Men of La Salle</h1>
+						<p class="text-center">
+							Men of La Salle, we are marching<br>
+							With our colors of green and white<br>
+							Meeting our foemen with valor<br>
+							For the glory of old we’ll fight<br>
+							So let’s go to the battle with courage<br>
+							For our goal is now in sight<br>
+							And we’ll hope, fight and sing with all our might so strong<br>
+							‘Till nobly we have fought and won the fight<br><br>
+							 
+							Refrain:<br>
+							Fight on to victory, onward our watchword be<br>
+							We’re out to win this game with all its honor<br>
+							For you, La Salle, we’ll always try to conquer<br>
+							Fight on to victory, let all your courage see<br>
+							And homeward, we’ll cheer thee as sons of La Salle<br>
+							So fight on to victory (Twice)
+						</p>
+					</div>
+				</div>
+
+				<div class="row margin-25-wrapper" id="wtwtg">
+					<div class="col-lg-8 col-sm-10 col-xs-12 col-sm-offset-1 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">Fighting Song</h1>
+						<p class="text-center">
+							On to victory<br>
+							We’re out to win today, here’s why<br>
+							For the green and white<br>
+							Green Archers going in to do or die<br>
+							Win or lose today<br>
+							We’re gonna try, and try the same old way<br>
+							And with all our might<br>
+							We’re gonna fight! Fight! Fight!<br>
+							FIGHT! FIGHT! FIGHT!<br>
+							On to victory<br>
+							Onward to L S C<br>
+							Our college here beside the sea<br>
+							All together now<br>
+							We’re going onward, on to victory<br>
+							Let our arrows fly<br>
+							And keep them flying, flying to their goal!<br>
+							And with all our might<br>
+							We’re gonna fight! Fight! Fight!<br>
+							FIGHT! FIGHT! FIGHT!<br>
+							On to victory<br>
+							LA SALLE!
+						</p>
+					</div>
+				</div>
+
+				<div class="row margin-25-wrapper" id="wtwtg">
+					<div class="col-lg-8 col-sm-10 col-xs-12 col-sm-offset-1 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">Onward Green Archers</h1>
+						<p class="text-center">
+							Onward Green Archers<br>
+							Onward and fight<br>
+							Keep up the high score and hang on<br>
+							For victory’s in sight<br>
+							Rah! Rah! Rah!<br>
+							Raise it, Green Archers<br>
+							Raise and hold ‘em high<br>
+							Your banner’s proudly waving<br>
+							With its colors of Green and White</p>
+					</div>
+				</div>
+
+				<div class="row margin-25-wrapper" id="wtwtg">
+					<div class="col-lg-8 col-sm-10 col-xs-12 col-sm-offset-1 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">Marching Song</h1>
+						<p class="text-center">
+							March, march on down the floor<br>
+							Fighting for La Salle<br>
+							Break through the other line<br>
+							Their strength to defy<br>
+							We’ll give them a long cheer<br>
+							To our true men<br>
+							We’re here to win again<br>
+							La Salle’s team can fight to the end<br>
+							And we will win<br>
+							Rah! Rah! Rah!</p>
+					</div>
+				</div>
+
+				<div class="row margin-25-wrapper" id="wtwtg">
+					<div class="col-lg-8 col-sm-10 col-xs-12 col-sm-offset-1 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">For The Green</h1>
+						<p class="text-center">
+							For the green! For the white!<br>
+							La Salle will fight!<br>
+							La the white! For the green!<br>
+							La Salle will win!<br>
+							With a Ho, Ho, Ho<br>
+							And a Ha, Ha, Ha<br>
+							With a Fight, Fight, Fight (pause)<br>
+							With a Siz Boom Bah<br>
+							With a Rah Rah Zip<br>
+							With a Rah Rah Boom<br>
+							With a Ray De La Salle<br>
+							With a give ‘er room (pause)<br>
+							March! March! March on, La Salle<br>
+							Fight! Fight! Fight on, La Salle<br>
+							Strike up the band<br>
+							There’s vict’ry beyond<br>
+							Vict’ry! Vict’ry! Vict’ry!<br>
+							Men of La Salle!</p>
+					</div>
+				</div>
+
+				<div class="row margin-25-wrapper" id="wtwtg">
+					<div class="col-lg-8 col-sm-10 col-xs-12 col-sm-offset-1 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">La Salle Rally</h1>
+						<p class="text-center">
+							Rally L pass, pass;<br>
+							Rally S shoot, shoot;<br>
+							Rally C goal, goal;<br>
+							Rally VIC-TO-RY<br>
+							VIC-TO-RY (diminishing)<br>
+							L-S-C<br>
+							L-S-C (increasing)<br>
+							L-S-C<br>
+							(pause)<br>
+							Rally green green green!<br>
+							Rally white white white!<br>
+							Rally green! Rally white!<br>
+							Rally green, white, fight!<br>
+							(pause)<br>
+							La Salle! Fight!<br>
+							Fight, De La Salle, fight!<br>
+							Fight, De La Salle, fight!<br>
+							Fight, De La Salle, fight!<br>
+							Fight, De La Salle!<br>
+							Fight, De La Salle!<br>
+							Fight, De La Salle, fight!<br>
+							(Followed by Fight, Fight, Green and White)</p>
+					</div>
+				</div>
+
+				<div class="row margin-25-wrapper" id="wtwtg">
+					<div class="col-lg-8 col-sm-10 col-xs-12 col-sm-offset-1 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">Fight, Fight, Green and White</h1>
+						<p class="text-center">
+							Fight, fight, green and white!<br>
+							Fight, fight, green and white!<br>
+							Fight, fight, La Salle!<br>
+							Siz Boom Bah<br>
+							(Repeat thrice, ending in Team, Team, Team)</p>
+					</div>
+				</div>
+
+				<div class="row margin-25-wrapper" id="wtwtg">
+					<div class="col-lg-8 col-sm-10 col-xs-12 col-sm-offset-1 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">Hold ‘Em Tight</h1>
+						<p class="text-center">
+							Hold ‘em tight! Hold ‘em tight!<br>
+							Hold ‘em, hold ‘em, hold ‘em tight!<br>
+							Green White, Green White<br>
+							Fight, team! Fight! (Thrice)</p>
+					</div>
+				</div>
+
+				<div class="row margin-25-wrapper" id="wtwtg">
+					<div class="col-lg-8 col-sm-10 col-xs-12 col-sm-offset-1 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">Shoulder To Shoulder</h1>
+						<p class="text-center">
+							Shoulder to shoulder<br>
+							Knee to knee<br>
+							Fight on, La Salle!<br>
+							To victory! (Twice)
+						</p>
+					</div>
+				</div>
+
+				<div class="row margin-25-wrapper" id="wtwtg">
+					<div class="col-lg-8 col-sm-10 col-xs-12 col-sm-offset-1 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">Animo Cheer</h1>
+						<p class="text-center">
+							Animo green!<br>
+							Animo white!<br>
+							Animo L-S-C will fight!<br>
+							Animo white!<br>
+							Animo green!<br>
+							Animo L-S-C will win!<br>
+							Aaaaaaaaaahhhhhhhhhhhhhh!<br>
+							Yippity, yippity, L-S-C!<br>
+							Green white, green white, victory!<br>
+							Yippity, yippity, L-S-C!<br>
+							Green white, green white, victory!
+						</p>
+					</div>
+				</div>
+
+				<div class="row margin-25-wrapper" id="wtwtg">
+					<div class="col-lg-8 col-sm-10 col-xs-12 col-sm-offset-1 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">Archer</h1>
+						<p class="text-center">
+							With an A with an A<br>
+							With an A R C<br>
+							With a C with a C<br>
+							With a C H E<br>
+							With an R with an R<br>
+							A R C H E R S<br>
+							Archers! Archers!
+						</p>
+					</div>
+				</div>
+
+				<div class="row margin-25-wrapper" id="wtwtg">
+					<div class="col-lg-8 col-sm-10 col-xs-12 col-sm-offset-1 col-lg-offset-2">
+						<h1 class="marine-text semi-bold cheer-title letter-space text-center">Fight ‘Em Again</h1>
+						<p class="text-center">
+							Fight ‘em again! Fight ‘em again!<br>
+							Fight ‘em HARD! (Thrice)<br>
+							Team, team, team!
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- ========== WHITE SECTION END ========== -->
+
+		<!-- ========== FOOTER SECTION ========== -->
+
+		<section id="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3 col-lg-offset-2 semi-bold">
+						GET IN TOUCH
+					</div>
+					<div class="col-lg-2 semi-bold">
+						DOWNLOAD
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-lg-offset-2">
+						<div class="row light">
+							<h5 class = "light white-text">
+							Room 301-A, Bro. Connon Hall</br>
+							2401 Taft Avenue,</br>
+							1004 Manila, Philippines</br></br>
+
+							Tel. Nos.: (+632) 536-0253 (Direct line)</br>
+							(+632) 524-4611 loc. 732 or 739 (Trunk line)</br>
+							E-mail: SLIFEdir@dlsu.edu.ph
+							</h5>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<h5></h5>
+						<div class="row">
+							<a href="https://play.google.com/store/apps/details?id=com.greenguide.dlsu.greenguide" target="_blank"><img class="col-lg-10 no-padding img-responsive" src="assets/img/googleplay.png"/></a>
+						</div>
+						<h5></h5>
+						<div class="row">
+							<a href="https://itunes.apple.com/ph/app/dlsu-lpep-green-guide/id1149956443?mt=8" target="_blank"><img class="col-lg-10 no-padding img-responsive" src="assets/img/appstore.png"/></a>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<br>
+						<img class="img-responsive" src="assets/img/white-footer-logo.png"/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========== FOOTER SECTION END ========== -->
+
+
+
+  </body>
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/randomizer.js"></script>
+
+ </html>	

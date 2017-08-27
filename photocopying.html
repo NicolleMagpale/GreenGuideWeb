@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="The DLSU LPEP Green Guide is a website and a mobile application to aid the freshmen in their LPEP. The Green Guide shows the LPEP schedule and materials as well as need-to-knows around DLSU.">
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+    <title>Green Guide 2016</title>
+
+	<link rel="apple-touch-icon" sizes="57x57" href="assets/img/icon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="assets/img/icon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/icon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/icon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="assets/img/icon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/icon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="assets/img/icon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="assets/img/icon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="assets/img/icon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="assets/img/icon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/icon/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+  	<!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/font-awesome-4.6.3/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen"> -->
+ 
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/Chart.js"></script>
+	<script src="assets/js/custom.js"></script>
+  </head>
+ 
+  <body>
+ 		<!-- NAVBAR -->
+		<nav class="navbar navbar-default navbar-custom">
+		  <div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+	      	</button>
+	       	<a class="navbar-brand pull-left" href="index.html"><img class="img-responsive header-img" src="assets/img/white-header-logo.png"></a>    
+		  </div>
+		  <div class="collapse navbar-collapse">
+		    <ul class="nav navbar-nav">
+		    	<li class="dropdown">
+		        	<a href="#" class="white-text nav-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">LPEP <span class="caret"></span></a>
+		        	<ul class="dropdown-menu">
+						<li><a href="lpep-sched.html" class="nav-menu-item">Schedule</a></li>
+						<li><a href="dean-message.html" class="nav-menu-item">Dean's Message</a></li>
+						<li><a href="pledge.html" class="nav-menu-item">Lasallian Pledge</a></li>
+                	</ul>
+		        </li>
+		        <li class="dropdown">
+		        	<a href="#" class="white-text nav-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Values & Prayers <span class="caret"></span></a>
+		        	<ul class="dropdown-menu">
+						<li><a href="values.html" class="nav-menu-item">Core Values</a></li>
+						<li><a href="prayers.html" class="nav-menu-item">Prayers</a></li>
+                	</ul>
+		        </li>
+		        <li class="dropdown">
+		        	<a href="#" class="white-text nav-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Offices <span class="caret"></span></a>
+		        	<ul class="dropdown-menu">
+						<li><a href="admin-offices.html" class="nav-menu-item">Administrative Offices</a></li>
+						<li><a href="student-affairs-offices.html" class="nav-menu-item">Lasallian Mission Offices</a></li>
+                	</ul>
+		        </li>
+		        <li class="dropdown">
+		        	<a href="#" class="white-text nav-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Student Organizations <span class="caret"></span></a>
+		        	<ul class="dropdown-menu">
+						<li><a href="cso.html" class="nav-menu-item">CSO</a></li>
+						<li><a href="cso-organizations.html" class="nav-menu-item">CSO Organizations</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="usg.html" class="nav-menu-item">USG</a></li>
+						<li><a href="usg-projects.html" class="nav-menu-item">USG Projects</a></li>
+                	</ul>
+		        </li>
+		        <li class="dropdown">
+		        	<a href="#" class="white-text nav-item dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FYI <span class="caret"></span></a>
+		        	<ul class="dropdown-menu">
+		        		<li><a href="hymns.html" class="nav-menu-item">Hymns</a></li>
+		        		<li><a href="cheers.html" class="nav-menu-item">DLSU Cheers</a></li>
+		        		<li role="separator" class="divider"></li>
+		        		<li><a href="parking.html" class="nav-menu-item">Parking</a></li>
+						<li><a href="arrows-express.html" class="nav-menu-item">Arrows Express</a></li>
+						<li><a href="places-to-eat.html" class="nav-menu-item">Places to Eat</a></li>
+						<li><a href="hotspot.html" class="nav-menu-item">WiFi Hotspot</a></li>
+						<li><a href="housing.html" class="nav-menu-item">Housing Facilities</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="printing.html" class="nav-menu-item">Printing</a></li>
+						<li><a href="photocopying.html" class="nav-menu-item">Photocopying</a></li>
+						<li><a href="supplies.html" class="nav-menu-item">School Supplies</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="academic-calendar.html" class="nav-menu-item">Academic Calendar</a></li>
+                		<li><a href="policies.html" class="nav-menu-item">Policies</a></li>
+						<li><a href="liturgical-activities.html" class="nav-menu-item">Liturgical Activities</a></li>
+                	</ul>
+		        </li>
+		        <li><a href="about.html" class="white-text nav-item">About</a></li>
+		    </ul>
+		  </div>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- ========== HEADER SECTION ========== -->
+
+		<section id="header" class="printing-header">
+			<div class = "container-fluid  bottom-align">
+				<div class = "row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class = "text-header white-text semi-bold letter-space">
+						For your school needs
+					</div>
+				</div>
+				<div class = "row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="white-text regular letter-space tip-header" id="randomTip"><b>TIP #10</b>: You don't always have to buy a new book, you can borrow from the Library or avail the Pahiram libro service of the USG.</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========== HEADER SECTION END ========== -->
+
+		<!-- ========== WHITE SECTION ========== -->
+
+		<section id="white">
+			<div class="container-fluid">
+				<div class="row">
+					<center><h1 class="green-forest-text semi-bold letter-space">Photocopying</h1></center>
+				</div>
+				<div class="row">
+				</div>
+				
+				<div class="row margin-25-wrapper">
+					<div class="col-lg-4 col-lg-offset-2">
+						<h3 class="marine-text semi-bold">Manila Campus</h3>
+						<table class="table table-custom">
+					      	<thead>
+						        <tr>
+							        <th class="th-custom"></th>
+						        </tr>
+					      	</thead>
+					      	<tbody>
+						        <tr>
+						          	<td class="td-custom"><b>St. La Salle Hall, Medrano Hall,</b>2nd Floor</td>
+						        </tr>
+						        <tr>
+						          	<td class="td-custom"><b>St. Joseph Hall, Brown Bench Hallways, </b>Ground Floor</td>
+						        </tr>
+						        <tr>
+						          	<td class="td-custom"><b>St. Miguel Hall, Faculty Association, </b>3rd Floor</td>
+						        </tr>
+						        <tr>
+						          	<td class="td-custom"><b>St. Miguel Hall, Agno Gate side, </b>Ground Floor</td>
+						        </tr>
+						        <tr>
+						          	<td class="td-custom"><b>Br. Andrew Gonzalez Hall, Hallways, </b>2nd Floor, 8th Floor, and 15th Floor</td>
+						        </tr>
+						        <tr>
+						          	<td class="td-custom"><b>Br. Andrew Gonzalez Hall, Law Library, </b>2nd Floor</td>
+						        </tr>
+					        </tbody>
+					    </table>
+					</div>
+					<div class="col-lg-4">
+						<h3 class="marine-text semi-bold">&nbsp</h3>
+						<table class="table table-custom">
+					      	<thead>
+						        <tr>
+							        <th class="th-custom"></th>
+						        </tr>
+					      	</thead>
+					      	<tbody>
+						        <tr>
+						          	<td class="td-custom"><b>Henry Sy., Sr Hall, The Learning Commons, </b>7th Floor and 9th Floor</td>
+						        </tr>
+						        <tr>
+						          	<td class="td-custom"><b>Enrique Yuchengco Hall, </b>Ground Floor</td>
+						        </tr>
+						        <tr>
+						          	<td class="td-custom"><b>Gokongwei Hall, </b>8th Floor Hallway</td>
+						        </tr>
+						        <tr>
+						          	<td class="td-custom"><b>AGH Hallway, </b>8th Floor Hallway</td>
+						        </tr>
+					        </tbody>
+					    </table>
+					</div>
+				</div>
+				<div class="row margin-25-wrapper">
+					<div class="col-lg-4 col-lg-offset-2">
+						<h3 class="marine-text semi-bold">Laguna Campus</h3>
+						<table class="table table-custom">
+					      	<thead>
+						        <tr>
+							        <th class="th-custom"></th>
+						        </tr>
+					      	</thead>
+					      	<tbody>
+						        <tr>
+						          	<td class="td-custom"><b>Near College Library, </b>3rd Floor</td>
+						        </tr>
+					        </tbody>
+					    </table>
+					</div>
+				</div>
+			</div>
+
+			
+		</section>
+
+		<!-- ========== WHITE SECTION END ========== -->
+
+		<!-- ========== FOOTER SECTION ========== -->
+
+		<section id="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-3 col-lg-offset-2 semi-bold">
+						GET IN TOUCH
+					</div>
+					<div class="col-lg-2 semi-bold">
+						DOWNLOAD
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-lg-offset-2">
+						<div class="row light">
+							<h5 class = "light white-text">
+							Room 301-A, Bro. Connon Hall</br>
+							2401 Taft Avenue,</br>
+							1004 Manila, Philippines</br></br>
+
+							Tel. Nos.: (+632) 536-0253 (Direct line)</br>
+							(+632) 524-4611 loc. 732 or 739 (Trunk line)</br>
+							E-mail: SLIFEdir@dlsu.edu.ph
+							</h5>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<h5></h5>
+						<div class="row">
+							<a href="https://play.google.com/store/apps/details?id=com.greenguide.dlsu.greenguide" target="_blank"><img class="col-lg-10 no-padding img-responsive" src="assets/img/googleplay.png"/></a>
+						</div>
+						<h5></h5>
+						<div class="row">
+							<a href="https://itunes.apple.com/ph/app/dlsu-lpep-green-guide/id1149956443?mt=8" target="_blank"><img class="col-lg-10 no-padding img-responsive" src="assets/img/appstore.png"/></a>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<br>
+						<img class="img-responsive" src="assets/img/white-footer-logo.png"/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ========== FOOTER SECTION END ========== -->
+
+
+  </body>
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/randomizer.js"></script>
+
+ </html>
