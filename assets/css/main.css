@@ -627,10 +627,15 @@ a:hover{
 /*LPEP*/
 .lpep-left{
     border-right: 2px solid #afc3c3 !important;
+    
 }
 
 .lpep-right{
     border-left: 2px solid #afc3c3 !important;
+}
+
+.lpep-left-td-custom{
+    width:35%
 }
 
 .product-tab:hover{
