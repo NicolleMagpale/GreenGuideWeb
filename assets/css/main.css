@@ -367,6 +367,13 @@ a:hover{
     background-size: 100% !important;
 }
 
+.cso-picture{
+    background: no-repeat fixed; 
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover;
+}
+
 .cheers-header{
     background: url(../img/headers/CHEERS.png) no-repeat top!important;
     -webkit-background-size: cover !important;
